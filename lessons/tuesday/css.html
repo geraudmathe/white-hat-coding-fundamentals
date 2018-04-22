@@ -1,0 +1,840 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/lib/css/reveal.css">
+  <link rel="stylesheet" href="/lib/css/solarized.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>CSS</h1>
+      </section>
+      <section>
+        <h2>Cascading style sheets</h2>
+        <p>Cascading Style Sheets (CSS) is a language that defines how HTML elements are styled</p>
+        <p>In other words, HTML structures a document, while CSS formats it</p>
+      </section>
+      <section>
+        <h2>Cascading style sheets</h2>
+        <p>CSS can be applied to single HTML elements, or it can be kept in a separate file and applied to elements throughout a document</p>
+        <p>Files that hold CSS are called “style sheets” and use the .css exension</p>
+        <p>Unlike HTML, CSS uses rules instead of tags</p>
+      </section>
+      <section>
+        <h2>Linking style sheets</h2>
+        <p>There are several ways to incorporate CSS into HTML:</p>
+        <ul>
+          <li>Inline styling</li>
+          <li>use of the &lt;style&gt; element nested in the &lt;head&gt; element</li>
+          <li>the &lt;link&gt; element and a separate CSS file</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Linking style sheets</h2>
+        <p>Placing CSS in a separate file has a lot of advantages:</p>
+        <ul>
+          <li>A style change can apply to an entire document</li>
+          <li>Teams working on Web projects can separate responsibilities</li>
+        </ul>
+
+      </section>
+      <section>
+        <h2>Linking style sheets</h2>
+        <p>YOU SHOULD ONLY EVER USE EXTERNAL STYLESHEETS</p>
+      </section>
+      <section>
+        <h2>Selectors and declarations</h2>
+        <p>There are two parts to a CSS rule:</p>
+        <ul>
+          <li>selectors</li>
+          <li>declarations</li>
+        </ul>
+
+      </section>
+      <section>
+        <h2>Selectors and declarations</h2>
+
+
+        <p>A selector references the HTML element that you want to style</p>
+        <p>A declaration is the style that you want to apply to that element</p>
+        <p>declarations have two parts: </p>
+        <p>a property followed by a colon (:) and a space, and a value followed by a semicolon (;)
+          declarations sit between curly brackets</p>
+        </section>
+        <section>
+          <h2>Selectors and declarations</h2>
+          <img src="/images/css-selector.png" alt="">
+        </section>
+        <section>
+          <h2>IDs and Classes</h2>
+          <p>HTML elements can be referenced by selectors in a number of ways, including:</p>
+          <ul>
+            <li>the tag name, such as p, h1, table, etc.</li>
+            <li>ID selectors, such as #navbar, which include a hashtag symbol (#) as a prefix</li>
+            <li>Class selectors, like .happy, which include a decimal (.) as a prefix</li>
+            <li>id and class are both universal attributes</li>
+            <li>id is used to identify unique elements</li>
+            <li>class should be used to categorize elements into groups that will be styled similarly</li>
+          </ul>
+
+        </section>
+        <section>
+          <h2>Comments</h2>
+          <p>Add comments to your CSS file to explain what it does</p>
+          <p>Add a multi-line comment by starting with the /* characters and ending with the */ characters</p>
+        </section>
+        <section>
+          <h2>CSS Box Model</h2>
+
+          <p>
+            Every HTML element is represented by a set of boxes
+            that surrounded the content. Each box's properties can then be
+            manipulated to change appearance the appearance of the element.
+          </p>
+          <p>
+            The 4 distinct boxes are as follows:
+          </p>
+          <ul>
+            <li>Content</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+          </ul>
+        </section>
+
+        <section>
+
+          <h2>CSS Box Model (cont.)</h2>
+          <img src="/images/box-model.gif" alt="Diagram of Box Model">
+        </section>
+
+
+        <section>
+          <h2>Codepen example</h2>
+          <p>
+            Click <a href="https://codepen.io/gerrymathe/pen/ELjmQX" target="_blank">here</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Always set box-sizing</h2>
+
+          <p>
+            I would recommend that from now on, every site's stylesheet that
+            you create should have the following code snippet as the very first
+            CSS declaration:
+          </p>
+          <img src="/images/css-box-sizing.png" alt="Box-sizing CSS snippet">
+
+        </section>
+
+        <section>
+          <h2>Everything's a box!</h2>
+
+          <p>
+            Just remember that in HTML, everything is just a box. Each box
+            wraps and segregates content that can then be uniquely styled.
+          </p>
+          <p>
+            Let's have a little look at how <a href="https://generalassemb.ly/" target="_blank">General Assembly's</a>
+            site is layed out!
+          </p>
+        </section>
+
+        <section>
+
+          <h2>Shorthand CSS</h2>
+
+          <p>
+            <code>margin</code> and <code>padding</code> are two CSS properties
+            that have the option of using a shorthand syntax:
+          </p>
+          <ul>
+            <li>
+              Setting each side individually e.g. <code>margin-top: 25px;</code>
+            </li>
+            <li>
+              Using a 4 value syntax e.g. <code>margin: 25px 15px 10px 15px;</code>
+            </li>
+            <li>
+              Using a 2 value syntax e.g. <code>margin: 25px 15px;</code>
+            </li>
+            <li>
+              Using a 3 value syntax e.g. <code>margin: 25px auto 10px;</code>
+            </li>
+            <li>
+              Using a single value e.g. <code>margin: 25px;</code>
+            </li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h2>CSS <code>display</code></h2>
+
+          <p>
+            For the purpose of basic structure and styling, elements typically have some default
+            styles before any code is even written (unless you're using reset.css!).
+          </p>
+          <p>
+            Some elements have more default styles than others, however all elements fall
+            into one of two categories: 'block' or 'inline' elements.
+          </p>
+        </section>
+
+        <section>
+          <h2>Block-level elements</h2>
+
+          <p>
+            Block-level elements are elements that, when no width is set, will expand
+            to fit the length of their container. This means they'll try to occupy
+            the whole row...they're greedy!
+          </p>
+          <p>
+            Block-level elements have the following characteristics:
+          </p>
+          <ul class="small">
+            <li class="fragment small">
+              When no <code>width</code> is set, will expand to the width of its container.
+            </li>
+            <li class="fragment">
+              <code>margin</code> and <code>padding</code> push elements away
+              both horizontally AND vertically.
+            </li>
+            <li class="fragment">
+              Ignores the <code>vertical-align</code> rule.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Block-level element examples</h2>
+
+          <p>
+            <code>&lt;div&gt;, &lt;section&gt;, &lt;header&gt;,
+              &lt;footer&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;table&gt;, &lt;fieldset&gt;, &lt;figure&gt;, &lt;aside&gt;,
+              &lt;article&gt;, &lt;nav&gt;, &lt;blockquote&gt;</code>
+            </p>
+          </section>
+
+          <section>
+            <h2>Inline elements</h2>
+
+            <p>
+              Inline elements fit perfectly in the flow of content and allow multiple
+              elements on a row. This makes them perfect for use within content.
+              They're also useful when you want elements to sit
+              next to each other on a row.
+            </p>
+            <p>
+              Inline elements have they following characteristics:
+            </p>
+            <ul>
+              <li class="fragment">
+                Sit in the flow of content.
+              </li>
+              <li class="fragment">
+                <code>margin</code> and <code>padding</code> only push elements
+                away horizontally.
+              </li>
+              <li class="fragment">
+                Are subject to <code>vertical-align</code>.
+              </li>
+              <li class="fragment">
+                Do not respond to set  <code>height</code> or <code>width</code>.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Inline element examples</h2>
+
+            <p>
+              <code>
+                &lt;span&gt;, &lt;em&gt;, &lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;img&gt;, &lt;a&gt;, &lt;input&gt;, &lt;button&gt;,
+                &lt;label&gt;, &lt;select&gt;, &lt;abbr&gt;, &lt;textarea&gt;
+              </code>
+            </p>
+          </section>
+
+          <section>
+            <h2>Codepen</h2>
+
+            <p>
+              Let's create a quick <a href="http://codepen.io/" target="_blank">pen</a> together
+              to go through the difference.
+            </p>
+            <p>
+              And to also take a look at the 'hybrid' display property of <code>inline-block</code>.
+            </p>
+          </section>
+
+          <section>
+            <h2>Inline-block elements</h2>
+
+            <p>
+              As we saw in the example, elements with <code>display: inline-block;</code>
+              contain characteristics from both block-level and inline elements.
+            </p>
+            <p>
+              Here's a breakdown of those characteristics:
+            </p>
+            <ul>
+              <li class="fragment">
+                Sit in the flow of content, if no margins or padding have been set.
+              </li>
+              <li class="fragment">
+                <code>margin</code> and <code>padding</code> push elements away
+                both horizontally AND vertically.
+              </li>
+              <li class="fragment">
+                Are subject to <code>vertical-align</code>.
+              </li>
+              <li class="fragment">
+                Responds to set  <code>height</code> and <code>width</code>.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Hiding elements</h2>
+            <p>
+              Sometimes we might want to hide elements on the page. An example of
+              one of these times might be when there is a dropdown menu that we want
+              to hide until the user hovers over a menu item.
+            </p>
+          </section>
+
+          <section>
+            <h2><code>display: none;</code> vs <code>visibility: hidden;</code></h2>
+
+            <p>
+              When elements are inserted into the DOM Tree, they are being 'parsed'. But
+              before they are actually placed on the page, they need to be 'rendered'.
+            </p>
+          </section>
+
+          <section>
+            <h2><code>display: none;</code></h2>
+
+            <p>
+              Elements with <code>display: none;</code> are parsed, but not rendered. Meaning
+              that surrounding elements act like there is no element present.
+            </p>
+          </section>
+
+          <section>
+            <h2><code>visibility: hidden;</code></h2>
+
+            <p>
+              Elements with <code>visibility: hidden;</code> are parsed AND rendered. This
+              means that the hidden element still occupies the space it otherwise would have.
+            </p>
+          </section>
+
+          <section>
+            <h2>Codepen example</h2>
+            <p>
+              Click <a href="https://codepen.io/gerrymathe/pen/ZoGRoO" target="_blank">here</a>
+            </p>
+          </section>
+
+          <section>
+            <h2>Positioning</h2>
+
+            <p>
+              Having a good understanding of CSS positioning is crucial for effective
+              layout of a page. However, it is an often misunderstood property, that
+              can quickly cause issues if used incorrectly.
+            </p>
+          </section>
+
+          <section>
+            <h2>Position properties</h2>
+
+            <p>
+              The position property can have one of 5 possible values:
+            </p>
+            <ul>
+              <li>Static (default)</li>
+              <li>Relative</li>
+              <li>Absolute</li>
+              <li>Fixed</li>
+              <li>Sticky (little support)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2><code>position: static;</code></h2>
+
+            <p>
+              This position declaration is the default value on all elements, if no
+              other position value has been set. It contains the following characteristics:
+            </p>
+            <ul>
+              <li>
+                Element maintains normal behaviour, sitting in the flow of the document.
+              </li>
+              <li>
+                Does not respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code> or <code>z-index</code> properties.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2><code>position: relative;</code></h2>
+
+            <ul>
+              <li>
+                If no other properties are set, the element will maintain all normal
+                behviour.
+              </li>
+              <li>
+                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code> and <code>z-index</code> properties.
+              </li>
+              <li>
+                If one of these other properties are set, the element will change position
+                on screen, but the original position of the element will remain, as if
+                the element was still there.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2><code>position: absolute;</code></h2>
+
+            <ul>
+              <li>
+                Pulls the element out of the normal flow of the document. Meaning
+                other elements will fill the space left by the absolutely positioned
+                element.
+              </li>
+              <li>
+                Block-level elements no longer stretch to fill the width of the container.
+              </li>
+              <li>
+                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code> and <code>z-index</code> properties.
+              </li>
+              <li>
+                Is positioned relatively to its closest ancestor with a position property
+                other than <code>position: static;</code>.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2><code>position: fixed;</code></h2>
+
+            <ul>
+              <li>
+                Pulls the element out of the normal flow of the document. Meaning
+                other elements will fill the space left by the fixed position
+                element.
+              </li>
+              <li>
+                Block-level elements no longer stretch to fill the width of the container.
+              </li>
+              <li>
+                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code> and <code>z-index</code> properties.
+              </li>
+              <li>
+                Is positioned relatively to the screen's viewport. Will maintain this position on the
+                viewport until another <code>position</code> property is set.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Codepen example</h2>
+            <p>
+              Click <a href="http://codepen.io/stooderrr/pen/ZOWRgO" target="_blank">here</a>
+            </p>
+          </section>
+
+          <section>
+            <h2><code>z-index</code></h2>
+
+            <p>
+              The <code>z-index</code> property specifies the z-order of an element
+              and its descendants.
+            </p>
+            <p>
+              This relates to how elements are 'stacked' in the viewport and therefore
+              which elements should appear closer to the user and sit on top of other elements.
+            </p>
+          </section>
+
+          <section>
+            <h2><code>z-index</code> (cont.)</h2>
+
+            <p>
+              Remember, a <code>position</code> value other than <code>static</code> has
+              to be set in order for <code>z-index</code> to work.
+            </p>
+            <p>
+              The <code>z-index</code> value can literally be any number you like. So, as
+              you can imagine, it can get messy very quickly. Always be sure to define a
+              <code>z-index</code> scale for a project to manage this.
+            </p>
+          </section>
+
+          <section>
+            <h2>Floats</h2>
+
+            <p>
+              The CSS <code>float</code> property takes elements out of the normal flow
+              of the document. The main values are none (default), left and right.
+            </p>
+            <p>
+              When floated left or right, an element will be placed to the given side
+              of its container, where inline elements or content can flow around it.
+            </p>
+          </section>
+
+          <section>
+            <h2>Codepen example</h2>
+            <p>
+              Click <a href="https://codepen.io/gerrymathe/pen/MGwXXe" target="_blank">here</a>
+            </p>
+          </section>
+
+          <section>
+            <h2>Clearfix</h2>
+
+            <img src="/images/css-clearfix.png" alt="Clearfix code snippet">
+            <p>
+              The <code>clearfix</code> class is always assigned to the PARENT element
+              of floated elements. The styling creates a new block formatting context, which
+              effectively maps out an element's contents. This forces the parent's height
+              to register its floated children's heights again.
+            </p>
+          </section>
+
+          <section>
+            <h2>Floats for layout</h2>
+            <p>
+              Due to the fact that floated elements allow other content and elements to wrap
+              around them, floats are perfect to use for layouts in CSS.
+            </p>
+            <p>
+              Elements used for structure are always block-level elements. However, when
+              <code>float</code> is applied, they no longer stretch to fill their container.
+            </p>
+          </section>
+
+          <section>
+            <h2>Codepen example</h2>
+            <p>
+              Click <a href="https://codepen.io/gerrymathe/pen/odXyMq" target="_blank">here</a>
+            </p>
+          </section>
+
+          <section>
+            <h2><code>clear</code></h2>
+
+            <p>
+              The <code>clear</code> property is directly related to floats. When elements are
+              floated, other subsequent elements may try and fit horizontally beside the floated
+              element. In order to re-position the element correctly a <code>clear</code>
+              property must be assigned.
+            </p>
+            <p>
+              The most commonly used <code>clear</code> declaration is <code>clear: both;</code>
+            </p>
+          </section>
+
+          <section>
+            <h2><code>clear</code> (cont.)</h2>
+
+            <p>
+              The main values for <code>clear</code> are none, left, right and both:
+            </p>
+            <ul>
+              <li>
+                <strong>none:</strong> the element does not clear past floated elements.
+              </li>
+              <li>
+                <strong>left:</strong> the element clears the left floated elements.
+              </li>
+              <li>
+                <strong>right:</strong> the element clears the right floated elements.
+              </li>
+              <li>
+                <strong>both:</strong> the element clears both right and left floated
+                elements.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>CSS <code>clear</code> vs <code>.clearfix</code></h2>
+            <p>
+              <code>clear</code> is a CSS property that is placed on an element to drop
+              it below floated elements.
+            </p>
+            <p>
+              <code>clearfix</code> is a class that is placed on a parent element (in the HTML)
+              when its height has collapsed due to its children being floated.
+            </p>
+          </section>
+
+          <section>
+            <h2>Try some layouts!</h2>
+            <img src="/images/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+              Work from the layout-challenge.pdf file and see how far you can get creating
+              the different layouts using what you've learned today.
+            </p>
+          </section>
+
+
+          <section>
+            <h2>Key Takeaways</h2>
+            <ul>
+              <li>
+                <p>
+                  Elements can either be block-level elements or inline elements. There
+                  is also a third <code>display</code> property of <code>inline-block</code>
+                  that acts as a hybrid.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The <code>position</code> property is used to change the position of
+                  elements to either <code>static</code>, <code>relative</code>,
+                  <code>absolute</code> or <code>fixed</code>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Floats are often used for layout purposes, but beware the effect they
+                  can have on their parent container
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Pseudo elements</h2>
+
+            <p>
+              In the box model CSS snippet we came across a new type of element: the
+              pseudo element.
+            </p>
+            <p>
+              Every non-replaced element (see <a href="http://reference.sitepoint.com/css/replacedelements" target="_blank">this</a>
+              article for definition) comes with two 'free' elements that can
+              be styled independently of the main element.
+            </p>
+            <p>
+              These elements are the <code>:before</code> and <code>:after</code>
+              elements.
+            </p>
+          </section>
+
+          <section>
+            <h2><code>:before</code> and <code>:after</code></h2>
+
+            <p>
+              These two pseudo-elements are your best friends when it comes to
+              adding extra design detail to your elements.
+            </p>
+            <p>
+              Other pseudo-elements include <code>:first-letter</code> and
+              <code>:first-line</code>, which can come in handy every now and then.
+            </p>
+            <p>
+              But <code>:before</code> and <code>:after</code> are by far the most commonly used.
+            </p>
+          </section>
+
+          <section>
+
+            <h2>Codepen example</h2>
+            <p>
+              Click <a href="https://codepen.io/gerrymathe/pen/bMdKzb" target="_blank">here</a>
+            </p>
+          </section>
+
+          <section>
+
+            <h2>The selector chain</h2>
+
+            <p>
+              In our first CSS lesson, we had a look at classes, IDs and we also
+              talked about specificity.
+            </p>
+          </section>
+
+
+          <section>
+
+            <h2>Advanced selectors</h2>
+
+            <p>
+              Learning how to target elements effectively for styling, beyond
+              simply using classes, is a key skill to develop in CSS.
+            </p>
+            <p>
+              Let's take a look at some more ways to home in on our target elements.
+            </p>
+          </section>
+
+          <section>
+
+            <h2>Descendant selectors</h2>
+            <img src="/images/css-descendant-selector.png" alt="CSS descendant selector example">
+            <p>
+              What element(s) is this selector chain targeting?
+            </p>
+            <p class="fragment">
+              Any anchor tag within any paragraph tag, that is within any section tag. Putting
+              a space between the selectors means that you are targeting a child element.
+            </p>
+          </section>
+
+          <section>
+
+            <h2>More selectors</h2>
+            <img class="inline-img" src="/images/css-selectors-1.png" alt="CSS selector example">
+            <img class="inline-img" src="/images/css-selectors-2.png" alt="CSS selector example">
+            <img class="inline-img" src="/images/css-selectors-3.png" alt="CSS selector example">
+
+            <p>
+              What are these 3 selector chains targeting?
+            </p>
+            <ol>
+              <li class="fragment">
+                An element with both the classes 'quote' AND 'large'
+              </li>
+              <li class="fragment">
+                Elements with a class of 'quote' OR 'intro'
+              </li>
+              <li class="fragment">
+                Any input tag that has an attribute of <code>type="submit"</code>
+              </li>
+            </ol>
+          </section>
+
+          <section>
+
+            <h2>Selector combinators</h2>
+
+            <ul>
+              <li class="fragment">
+                <p>
+                  <img class="inline-img" src="/images/selector-combinators-1.png" alt="Adjacent sibling selector">
+                  selects matching sibling that immediately follows the first element declared
+                </p>
+              </li>
+              <li class="fragment">
+                <p>
+                  <img class="inline-img" src="/images/selector-combinators-3.png" alt="General sibling selector">
+                  selects all matching elements specified that share
+                  a parent with the first element declared
+                </p>
+              </li>
+              <li class="fragment">
+                <p>
+                  <img class="inline-img" src="/images/selector-combinators-2.png" alt="Descendant selector">
+                  selects the direct matching child of the first element declared
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+
+            <h2>Pseudo classes</h2>
+
+            <ul>
+              <li>
+                <p>
+                  <img class="inline-img" src="/images/pseudo-classes-1.png" alt="nth-child pseudo class example">
+                  selects a child element whose numeric position in the
+                  the series of child elements matches the pattern an+b.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <img class="inline-img" src="/images/pseudo-classes-2.png" alt="nth-of-type pseudo class example">
+                  selects the type of element whose position
+                  matches the pattern an+b, whilst also having the same parent element.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <img class="inline-img" src="/images/pseudo-classes-3.png" alt="hover pseudo class example">
+                  applies styles to an element when the cursor hovers over it.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <img class="inline-img" src="/images/pseudo-classes-4.png" alt="focus pseudo class example">
+                  activated when the user selects the element. Typically used for form inputs.
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+
+            <h2>Nested selectors</h2>
+            <img src="/images/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+              Learning how to effectively target elements for styling is crucial
+              for writing clean CSS code.
+            </p>
+            <p>
+              Complete <a href="http://flukeout.github.io/" target="_blank">this</a> exercise to
+              build your understanding of selector chains. There will be a few new
+              selectors in there!
+            </p>
+            <p>
+              If you run into trouble <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">this</a>
+              MDN article is a great resource.
+            </p>
+          </section>
+
+          <section>
+
+            <h2>Key Takeaways</h2>
+
+            <ul>
+              <li>
+                <p>
+                  Every HTML element is made up of a set of boxes: content, padding,
+                  margin and border
+                </p>
+              </li>
+              <li>
+                <p>
+                  The <code>box-sizing</code> property is a must if you want to keep
+                  your sanity
+                </p>
+              </li>
+              <li>
+                <p>
+                  Non-replaced elements come with two pseudo-elements, which are often
+                  used for styling purposes
+                </p>
+              </li>
+              <li>
+                <p>
+                  Always use classes to target elements for styling and IDs to target
+                  in JavaScript
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <script src="/lib/js/reveal.js"></script>
+      <script src="/lib/js/marked.js"></script>
+      <script src="/lib/js/markdown.js"></script>
+      <script src="/lib/js/script.js"></script>
+    </body>
+    </html>

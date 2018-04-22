@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/lib/css/reveal.css">
+		<link rel="stylesheet" href="/lib/css/solarized.css">
+		<link rel="stylesheet" href="/lib/css/style.css">
+	</head>
+	<body><h2></h2>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>What's an app</h1>
+        </section>
+        <section>
+          <h2>Building an app</h2>
+          <p>Creating an app requires a number of steps, including:</p>
+          <ul>
+            <li>Planning your project</li>
+            <li>Designing the user interface (UI)</li>
+            <li>Updating the app manifest</li>
+            <li>Writing the code</li>
+            <li>Building the app</li>
+            <li>Debugging and testing the app</li>
+            <li>Packaging the app</li>
+            <li>Validating the app</li>
+            <li>Deploying the app</li>
+          </ul>
+
+        </section>
+        <section>
+          <h2>Managing app data</h2>
+
+          <p>When we enter a uniform resource locator (URL) into the address bar of a browser, the browser sends an HTTP request to a Web server for a Web page</p>
+          <p>HTTP is short for Hypertext Transport Protocol</p>
+          <p>HTTP is a stateless protocol, which means that it doesn’t retain data from session to session</p>
+          <p>Therefore, when we close a Web browser after using an application, data is not automatically saved</p>
+        </section>
+        <section>
+          <h2>State Management</h2>
+          <p>When users request access to an application, or use a Web browser, a state is created
+            There are three different types of states, including:</p>
+            <ul>
+              <li>session states</li>
+              <li>application states</li>
+              <li>persistent states</li>
+            </ul>
+
+            <p>When a state starts and ends is dependent upon which type of state it is
+            State management is the process of maintaining Web page information about a web page</p>
+        </section>
+
+        <section>
+          <h2>States</h2>
+          <p>A session state is created when access to an application is requested by logging in
+          It ends when a user ends the session, or logs out of the app</p>
+          </p>An application state is created when a browser sends a request for a Web page to a web server
+          It ends when a user closes the browser</p>
+          <p>Persistent state information is data that remains for use by an application after a session ends
+          This allows an app to continue its state when a user returns to a site</p>
+        </section>
+        <section>
+          <h2>Cookies</h2>
+          <p>A cookie is a small file that is created in the web browser and is domain dependent.</p>
+          <p>Everytime a request is made to the server, the cookies are sent along the request, allowing the server to identify users and work around the statelessness of http</p>
+        </section>
+        <section>
+          <h2>Cookies </h2>
+          <p>Cookies have limitations, because they are just file, they can be moved anc changed easily, which can be a security issue.</p>
+          <p>As well as that when there is too many cookies for a single application, it becomes hard to manages and impact the performance</p>
+          <p>With HTML5, developers can now use different solutions to store data:</p>
+          <ul>
+            <li>Local Storage</li>
+            <li>Session Storage</li>
+          </ul>
+        </section>
+        <section>
+          <h2>SessionStorage</h2>
+          <p>is avaialable for the duration of the session, when the page is open.</p>
+          <p>It gets automatically deleted when the tab/window is closed</p>
+        </section>
+        <section>
+          <h2>LocalStorage</h2>
+          <p>Is persisted for ever(if you want to, but it's customisable).</p>
+        </section>
+        <section>
+          <h2>What about saving data when the user is offline .....</h2>
+        </section>
+        <section>
+          <h2>AppCache !</h2>
+          <p>Data can be stored locally when a user is offline using the Application Cache, or AppCache</p>
+          <p>AppCache stores resources, such as HTML, CSS, and JavaScript files, locally on a user’s machine</p>
+          <p>As a result, users can access Web pages and apps offline</p>
+          <p>Developers can dictate which type of information is stored locally in the cache manifest file</p>
+        </section>
+        <section>
+          <h2>Debugging</h2>
+          <p>Debugging is the process of finding potential issues and syntax errors</p>
+          <p>It's usually done using tools made for developers</p>
+          <a href="https://developer.chrome.com/devtools">(Chrome dev tools)</a>
+        </section>
+			</div>
+		</div>
+		<script src="/lib/js/reveal.js"></script>
+		<script src="/lib/js/marked.js"></script>
+		<script src="/lib/js/markdown.js"></script>
+		<script src="/lib/js/script.js"></script>
+	</body>
+</html>

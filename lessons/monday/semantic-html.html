@@ -1,0 +1,559 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/lib/css/reveal.css">
+		<link rel="stylesheet" href="/lib/css/solarized.css">
+		<link rel="stylesheet" href="/lib/css/style.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>Semantic HTML</h1>
+        </section>
+        <section>
+          <h2>Hypertext Markup Language (HTML)</h2>
+          <ul>
+            <li>HTML is the language used to provide structure and semantic to web pages</li>
+            <li>HTML use tags, such as <code>&lt;li&gt;</code> and <code>&lt;h1&gt;</code> </li>
+            <li>We currently use HTML 5</li>
+            <li>the <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a> is the organisation in charge of defining the standards for html and CSS</li>
+            <li>HTML is platform independent, which means it works on all devices regardless of the operating system</li>
+          </ul>
+        </section>￼￼￼￼￼￼￼￼￼￼￼￼￼￼
+        <section>
+          <h2>Special Characters in HTML</h2>
+          <p>A special character, such as a percent sign or a copyright symbol, is known
+as an entity in HTML</p>
+          <p>Including entities in a Web page requires character encoding or the special
+characters will not render or it will render weird characters on the screen</p>
+          <p>Each special character can be reproduced using its entity name OR a numerical code</p>
+        </section>
+        <section>
+          <h2>Special Characters in HTML</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Characters</th>
+                  <th>Description</th>
+                  <th>Entity Name</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>©</td>
+                  <td>Copyright</td>
+                  <td><code>& copy;</code></td>
+                  <td><code>& #169;</code></td>
+                </tr>
+                <tr>
+                  <td>$</td>
+                  <td>Dollar Sign</td>
+                  <td><code>& dollar;</code></td>
+                  <td><code>& #36;</code></td>
+                </tr>
+                <tr>
+                  <td>%</td>
+                  <td>Percent Sign</td>
+                  <td><code>& percnt;</code></td>
+                  <td><code>& #37;</code></td>
+                </tr>
+              </tbody>
+            </table>
+        </section>
+        <section>
+          <h2>The Doctype</h2>
+          <p>The doctype is the first line in an html document</p>
+          <p>The doctype tells the web browser which version of html the document is using</p>
+          <p>Doctypes used to be a long set of url in a tag like:</p>
+          <code>&lt;!DOCTYPE html PUBLIC
+HTML 4 "-//W3C//DTD XHTML 1.1//EN"
+"http://www.example.com/TR/xhtml11/DTD/ xhtml11.dtd"&gt;</code>
+        </section>
+        <section>
+          <h2>The Doctype</h2>
+          <p>However for HTML 5 they have made it really simple:</p>
+          <code>&lt;!DOCTYPE html&gt;</code>
+        </section>
+
+        <section>
+          <h1>HTML Tags</h1>
+        </section>
+        <section>
+          <h2>General Purpose Tags</h2>
+          <table class="small">
+            <tbody>
+              <tr>
+                <td>&lt;html&gt;</td>
+                <td>Wraps all the content in the page, the first and last tag</td>
+              </tr>
+              <tr>
+                <td>&lt;head&gt;</td>
+                <td>Contains all the meta information for the page, doesn't change the visual aspect</td>
+              </tr>
+              <tr>
+                <td>&lt;body&gt;</td>
+                <td>Contains all the visible content on the page</td>
+              </tr>
+              <tr>
+                <td>&lt;script&gt;</td>
+                <td>Used to either link a javascript file or add javascript directly in the page</td>
+              </tr>
+              <tr>
+                <td>&lt;link&gt;</td>
+                <td>Used to link a stylesheet file</td>
+              </tr>
+              <tr>
+                <td>&lt;style&gt;</td>
+                <td>Used to add style to the page</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>HTML Text Elements</h2>
+          <table class="small">
+            <tbody>
+              <tr>
+                <td>&lt;b&gt;</td>
+                <td>Defines bold text</td>
+              </tr>
+              <tr>
+                <td>&lt;em&gt;</td>
+                <td>Defines emphasized text</td>
+              </tr>
+              <tr>
+                <td>&lt;i&gt;</td>
+                <td>Defines italicized text</td>
+              </tr>
+              <tr>
+                <td>&lt;small&gt;</td>
+                <td>Defines smaller text</td>
+              </tr>
+              <tr>
+                <td>&lt;strong&gt;</td>
+                <td>Defines important text</td>
+              </tr>
+              <tr>
+                <td>&lt;sub&gt;</td>
+                <td>Defines subscript text</td>
+              </tr>
+              <tr>
+                <td>&lt;sup&gt;</td>
+                <td>Defines superscript text</td>
+              </tr>
+            <tbody>
+          </table>
+        </section>
+        <section>
+          <h1>Images and Graphics</h1>
+        </section>
+        <section>
+          <h2>Images types</h2>￼￼￼
+          <p><strong>Raster(Pixel) Images</strong> are made from a matrix of
+              pixel of different colours, when you zoom-in you cans ee the pixels appearing. </p>
+￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼             <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kitten_in_Rizal_Park%2C_Manila.jpg/1200px-Kitten_in_Rizal_Park%2C_Manila.jpg">Example</a>
+        </section>
+        <section>
+          <h2>Images types</h2>￼￼￼
+          <p><strong>Vector Images</strong> are made from a lines and curves coordinates so you will never see a difference in quality when zoomed-in. </p>
+￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼             <a href="https://upload.wikimedia.org/wikipedia/commons/0/0f/Kitten_1370737.svg">Example</a>
+        </section>
+
+        <section>
+          <h2>The Image element</h2>￼￼￼
+          <p>The &lt;img&gt; tag is used to display an image in the browser</p>
+          <p>The &lt;img&gt; requires at least 2 attributes</p>
+          <ul class="small">
+            <li><code>src</code> to indicate the file location </li>
+            <li><code>alt</code> to indicate what the image represents, so that people with specifc needs and
+              special web browser can access the content  </li>
+          </ul>
+          <p><code>&lt;img src="file.svg" alt="cool cat sitting on the bench" /&gt;</code> </p>
+        </section>
+
+        <section>
+          <h2>figure and figcaption Elements</h2>
+          <ul>
+            <li class="small">The img element can be used in combination with two new elements,
+            figure and figcaption, to organize images and provide captions</li>
+            <li class="small">The figure element specifies the type of figure that is being added, and
+            can also be used to group images side by side</li>
+            <li class="small">The figcaption element can be used to add captions before or after images</li>
+          </ul>
+          <code><pre> do
+&lt;figure &gt;
+  &lt;figcaption&gt;I love this dog&lt;/figcaption &gt;
+  &lt;img src="dog.jpg" alt="my dog" title="Stella"/ &gt;
+&lt; /figure &gt;
+          </pre></code>
+        </section>
+        <section>
+          <h1>Canvas & SVG</h1>
+        </section>
+        <section>
+          <h2>The canvas Element</h2>
+          <ul>
+            <li>The canvas element creates a blank container for graphics
+            ￼￼</li>
+            <li>It’s a new element in HTML5 and you can draw graphics using JavaScript
+            </li>
+            <li>Canvas can is used by developers to create 2D games or animations
+            </li>
+          </ul>
+          <code>&lt;canvas id="myCanvas" width=“500px" height=“300px"&gt;&lt;/canvas&gt;</code>
+        </section>
+        <section>
+          <h2>The canvas Element</h2>
+          <p>The canvas element won’t work on some older browsers.
+            To avoid problems with rendering, you should add content that will display when a canvas drawing cannot
+          </p>
+          <p>
+            The content can be an image or text
+          </p>
+          <code><pre>
+    &lt;canvas id="myCanvas" width=“500px" height=“300px"&gt;
+      &lt;img src="http://www.example.com/images/smlRectangle.jpg"
+      alt="A blue rectangle" /&gt;
+    &lt;/canvas&gt;</pre></code>
+        </section>
+        <section>
+          <h2>Scalable Vector Graphics</h2>
+          <ul>
+            <li>Scalable Vector Graphics (SVG) is a language for describing 2D graphics in XML</li>
+            <li>With SVG, you provide drawing instructions within your code versus using the src attribute to point to a file</li>
+            <li>Unlike other image types, graphics created using the svg element are scalable</li>
+          </ul>
+          <code>
+            <pre>
+&lt;svg height="1000px" width="1000px"
+  &lt;rect id="myRect" height="100px" width="100px" fill="blue"/>
+&lt;/svg>
+            </pre>
+          </code>
+        </section>
+        <section>
+          <h1>Media in HTML 5</h1>
+        </section>
+        <section>
+          <h2>Video Tags</h2>
+          <ul>
+            <li>You can embed video into HTML documents using the &lt;video&gt; element</li>
+            <li>Use the source attribute to point to the location of the video file</li>
+            <li>The height and width attributes help determine how the video will appear
+            on a Web page</li>
+          </ul>
+          <code>
+            <pre>
+&lt;svg height="1000px" width="1000px"&gt;
+  &lt;rect id="myRect" height="100px" width="100px" fill="blue"/&gt;
+&lt;/svg&gt;
+            </pre>
+          </code>
+        </section>
+        <section>
+          <h2>Video Control Attributes</h2>
+          <p>There are a number of other attributes that can be used with the video tag to add control of the video
+          HTML</p>
+
+          <code>
+            <pre>
+              &lt;video src=“cat_vid.mp4 width="400" height="300" poster=”meow.jpg" autoplay controls loop&gt;
+              &lt;/video&gt;
+            </pre>
+          </code>
+        </section>
+        <section>
+          <h2>Video Control Attributes</h2>
+          <table>
+            <tr>
+              <td>Poster</td>
+              <td>displays a static image before the video loads</td>
+            </tr>
+            <tr>
+              <td>autoplay</td>
+              <td>starts playing the video automatically upon page load</td>
+            </tr>
+            <tr>
+              <td>controls</td>
+              <td>displays controls for controlling the volume, playing, pausing, and stopping the video</td>
+            </tr>
+            <tr>
+              <td>loop</td>
+              <td>plays the video on repeat</td>
+            </tr>
+          </table>
+￼        </section>
+        <section>
+          <h2>Video Formats</h2>
+          <ul>
+            <li>A number of video formats are supported by Web browsers, including MP3, H.264, OGG, and WebM</li>
+            <li>When you specify the video type, you should also specify the codec</li>
+            <li>It’s a best practice to use the <source> tag in combination with its type attribute to point to the file and specify the file type</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Video Formats</h2>
+          <code>
+            <pre>
+              &lt;video
+                    width="400"
+              ￼￼      height="300"
+                    poster=“meow.jpg"
+                    autoplay="autoplay"
+                    controls="controls" loop="loop"&gt;
+                    &lt;source src=”cat_vid.mp4” type="video/mp4" /&gt;
+              &lt;/video&gt;
+            </pre>
+          </code>
+        </section>
+        <section>
+        <h2>Compatibility</h2>
+        <p>Not all video formats are compatible with all browsers</p><p>
+          The MP4 format is the most commonly used by Web browsers and mobile devices</p>
+￼       <p class="small">
+            To ensure that a video is compatible with a majority of browsers and devices, you should use the &lt;source&gt; element to include multiple formats
+        </p>
+        <code>
+            <pre>
+            &lt;video
+                  width="400"
+            ￼￼      height="300"
+                  poster=“meow.jpg"
+                  autoplay="autoplay"
+                  controls="controls" loop="loop"&gt;
+                  &lt;source src=”cat_vid.mp4” type="video/mp4" /&gt;
+            &lt;/video&gt;
+            </pre>
+          </code>￼￼￼
+￼
+        </section>
+        <section>
+          <h2>Audio Tags</h2>
+          <p>The HTML5 audio element works much like the video element</p>
+          <p>Include the <audio> tag and a path that points to the audio file.</p>
+          <p>You can modify the audio element using its control-related attributes, including <code>autoplay</code> <code>controls</code> <code>loop</code> </p>
+          <code>
+              <pre>￼￼￼￼￼￼
+&lt;audio src=”myaudio.mp3" controls="controls”&gt;&lt;/audio&gt;
+              </pre>
+            </code>￼￼￼
+        </section>
+        <section>
+          <h2>Audio Tags</h2>
+          <p>There are three primary formats of audio supported by Web browsers, including <code>OGG</code> <code>MP3</code> <code>WAV</code> </p>
+          <p>Not every browser supports every audio type</p>
+          <p>You can use the source attribute to include multiple types</p>
+          <code>
+            <pre>￼￼￼￼￼￼
+&lt;audio controls&gt;
+  &lt;source src=“myaudio.mp3” type=“audio/mp3”/&gt;
+  &lt;source src=“myaudio.ogg” type=“audio/ogg”/&gt;
+&lt;/audio&gt;
+            </pre>
+          </code>￼￼￼
+
+        </section>
+				<section>
+					<h1>Semantic HTML</h1>
+				</section>
+				<section>
+					<h2>HTML 5 Semantic tags</h2>
+					<p>Back in html 4 We had to use div to create blocks on a page</p>
+					<img src="/images/html-html4-layout.png" alt="">
+					<h6>Credits: Microsoft academy</h6>
+				</section>
+				<section>
+					<h2>HTML 5 Semantic tags</h2>
+					<p>HTML 5 brought a whole new set of tags helping with the semantic</p>
+					<img src="/images/html-semantic.png" alt="">
+					<h6>Credits: Microsoft academy</h6>
+				</section>
+				<section>
+					<h2>the div tag</h2>
+					<p>a &lt;div&gt; tag is a basic block that usually requires the use of <code>ID</code> or <code>class</code> to style it 	</p>
+					<p>A class can be in the document several times</p>
+					<p>An ID is unique in a page</p>
+				</section>
+				<section>
+					<h2>Layout and stucture tags</h2>
+					<table class="small">
+						<tbody>
+							<tr>
+								<td>
+									&lt;address&gt;
+								</td>
+								<td>
+									Defines an area for contact information for a page or section
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&lt;article&gt;
+								</td>
+								<td>
+									Defines an article, such as a magazine or newspaper article, blog post, or similar content
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&lt;aside&gt;
+								</td>
+								<td>
+									Defines content that’s separate from but related to the page content; similar to a sidebar in book chapters and magazine articles
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&lt;details&gt;
+								</td>
+								<td>
+									Contains additional details pertinent to text around it; creates an interactive widget a user can display or hide
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&lt;footer&gt;
+								</td>
+								<td>
+									Defines a footer for a document or section; may include the document author, contact information, copyright information, and links to terms of use
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&lt;header&gt;
+								</td>
+								<td>
+									Defines a header for a document or section; may contain introductory content or navigation links
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&lt;hgroup&gt;
+								</td>
+								<td>
+									Groups headings and subheadings (using the &lt;h1&gt; to &lt;h6&gt; tags) for multi-level headings
+									</td>
+								</tr>
+								<tr>
+								<td>
+									&lt;nav&gt;
+								</td>
+								<td>
+									Defines a block of navigation links
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&lt;section&gt;
+								</td>
+								<td>
+									Defines a section in a document, such as chapters, parts of a thesis, or parts of a Web page whose content is distinct from each other
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&lt;summary&gt;
+								</td>
+								<td>
+									Defines a visible heading for a details element; user can click to display or hide information
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h2>Tables</h2>
+					<p>Tables are made from cells and rows.</p>
+					<table class="small">
+						<tr>
+							<td>&lt;table&gt;</td><td>	creates a table</td></tr>
+						<tr>
+							<td>&lt;tr&gt;</td><td>	creates rows</td></tr>
+						<tr>
+							<td>&lt;th&gt;</td><td>	creates headers</td></tr>
+						<tr>
+							<td>&lt;td&gt;</td><td>	creates cells within rows (columns)</td></tr>
+						<tr>
+							<td>&lt;colgroup&gt;</td><td>	used to apply styles to a range of columns</td></tr>
+						<tr>
+							<td>&lt;thead&gt;</td><td>	marks a group of header rows</td></tr>
+						<tr>
+							<td>&lt;tfoot&gt;</td><td>	marks a group of footer rows</td></tr>
+						<tr>
+							<td>&lt;tbody&gt;</td><td>	used to format groups of rows</td></tr>
+						<tr>
+							<td>&lt;caption&gt;</td><td>	marks text as a caption</td></tr>
+					</table>
+				</section>
+				<section>
+					<h2>Lists</h2>
+					<p>Lists can be defined using two tags.</p>
+					<p>&lt;ol&gt; will create a ordered list(with numbered items)</p>
+					<p>&lt;ul&gt; will create an unordered list(with bullet points)</p>
+					<p>Items in lists are always defined using &lt;li&gt;</p>
+				</section>
+				<section>
+					<h2>Forms</h2>
+					Forms are used to send data to the server.
+					<p class="fragment fade-up">The <code>&lt;ul&gt;</code> tag is used to define a form block as well as the url where the data should be sent</p>
+					<p class="fragment fade-up">The <code>&lt;input&gt;</code> tag is used to add element in the form allowing the user to fill the form</p>
+					<p class="fragment fade-up">The <code>&lt;label&gt;</code> tag is used to label the inputs</p>
+				</section>
+				<section>
+					<h2>Input types</h2>
+					<table class="small">
+						<tbody>
+							<tr>
+								<td>text</td> <td>	Creates a text field</td>
+							</tr>
+							<tr>
+								<td>password</td> <td>	Creates a password field that</td>
+							</tr>
+							<tr>
+								<td>submit</td> <td>	Creates a submit button</td>
+							</tr>
+							<tr>
+								<td>radio</td> <td>	Creates a radio button that can be selected</td>
+							</tr>
+							<tr>
+								<td>checkbox</td> <td>	Creates a checkbox field that can be checked</td>
+							</tr>
+							<tr>
+								<td>date</td> <td>	Requires users to enter a valid date</td>
+							</tr>
+							<tr>
+								<td>email</td> <td>	Requires users to enter a valid email address</td>
+							</tr>
+							<tr>
+								<td>search</td> <td>	Creates a search field</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h2>Input options</h2>
+					<p>There are a number of attributes that can be used with the &lt;input&gt; element to enhance Web forms</p>
+					<p>Use the <code>autofocus</code> attribute to point the focus to a specific input field when a Web page loads</p>
+					<p>Use the <code>required</code> attribute when a field is required</p>
+					<p>Use the <code>placeholder</code> attribute to add text to a field that will help users know what to enter</p>
+				</section>
+				<section>
+					<h2>Form validation</h2>
+					<p>It is really important to validate the user input before the form is submitted</p>
+					<p>Common issues that arise with forms are:</p>
+					<ul>
+						<li>empty fields</li>
+						<li>invalid email addresses</li>
+						<li>invalid dates</li>
+						<li>text vs. numbers and vice versa</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<script src="/lib/js/reveal.js"></script>
+		<script src="/lib/js/marked.js"></script>
+		<script src="/lib/js/markdown.js"></script>
+		<script src="/lib/js/script.js"></script>
+	</body>
+</html>

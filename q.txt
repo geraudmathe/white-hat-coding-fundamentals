@@ -1,0 +1,928 @@
+1
+What is the advantage of the AppCache?
+The AppCache is used to distribute the entire application to multiple different systems.
+The AppCache allows developers to share common code across projects, leading to faster development process due to not rewriting already existing methods.
+The AppCache is used to cache user information on the server to allow for faster server-side processing on subsequent user connections.
+XThe AppCache stores files on the user's local machine, causing them to load faster when called again. This also allows for the cached files to be accessed while the user is offline.
+
+2
+As part of the debugging process, a programmer will usually use a validator to test their code. What does this accomplish?
+A validator is a testing environment used to validate the page visually. This allows the developer to catch any errors in the markup that will cause the page to render incorrectly.
+A validator checks over the page for any spelling or grammar errors in the content of the page, ignoring any markup.
+A validator is used to debug any scripting on the page. The advantage of the validator is allowing the code to stop at preset break points, and the manual inspection of variable values.
+XA validator checks the markup used on the page for any errors or problems in your code. It does not, however, provide an environment to test the code itself.
+
+3
+Application packaging is the process of grouping all files relevant to an application into a single package. What kind of tool is used to do this?
+Javascript
+WWAHost.exe
+XApp Development environments
+This is a native feature of HTML5
+
+4
+What is the difference between an App Package and an App Container?
+The App Container is the entire app packaged into a single file. This process is similar to archiving a large number of files to transfer them to another person.The App Package is the memory space allocated at runtime for the app on the user's local machine.
+XThe App Package is the entire app packaged into a single file. This process is similar to archiving a large number of files to transfer them to another person.The App Container is the memory space allocated at runtime for the app on the user's local machine.
+App Package and App Container are synonyms.
+The App Package is the entire app packaged into a single file. This process is similar to archiving a large number of files to transfer them to another person. The App Container is a directory within the App Package that contains all resource files (Scripts, Stylesheets, Images, ect...) for the app.
+
+  5
+  Which of the following is the correct usage for the <time> tag?
+  The current time is <time value="getCurrentTime();" />
+  The current time is <time currentime />
+  XThe current time is <time datetime="2012-1-1T12:54:22Z">12:54</time>
+  All of these are correct.
+
+  6
+  Which of the following is the correct usage for the <figure> and <figcaption> tags?
+  <figure>
+  <img src="fig1.jpg" alt="Building Plans Fig. 1" />
+  </figure>
+  <figcaption>Fig. 1 - Building plans for the new construction project downtown.</figcaption>
+
+  X<figure>
+  <img src="fig1.jpg" alt="Building Plans Fig. 1" />
+  <figcaption>Fig. 1 - Building plans for the new construction project downtown.</figcaption>
+  </figure>
+
+  <img src="fig1.jpg" alt="Building Plans Fig. 1">
+  <figcaption>Fig. 1 - Building plans for the new construction project downtown.</figcaption>
+  </img>
+
+  <figure src="fig1.jpg" alt="Building Plans Fig. 1" />
+  <figcaption>Fig. 1 - Building plans for the new construction project downtown.</figcaption>
+
+  7
+  How do developers properly add controls to an audio element?
+  X<audio controls="controls">
+  <audio control>
+  <audio controls="on">
+  <audio controls="Play, Pause, Seeking, Volume">
+
+  8
+  Which of the following is the correct syntax for a pattern attribute on an input tag?
+  pattern password
+  pattern="password"
+  None of these
+  Xpattern="[A-z0-9]"
+
+  9
+  Which of the following items is not a valid input type?
+  Email
+  URL
+  Button
+  All of these are valid
+
+10
+What is the correct syntax for a CSS comment?
+<!--- Comment Goes Here -->
+XX/* Comment Goes Here */
+// Comment Goes Here
+# Comment Goes Here #
+
+11
+What is the purpose of the flexbox properties in CSS?
+XTo display an element as a flexbox, allowing its size, and position adjust with the size of the viewport.
+To display an element as a flexbox, allowing the user to drag the edges of the box in and out to change its size.
+To display an element as a flexbox, allow it to be moved dynamically to any position on the page with very little additional code.
+To display an element as a flexbox, allowing the content of a paragraph element to wrap around adjacent images.
+
+12
+Which is the correct method to define a block element as a grid?
+None of these
+show: grid;
+grid: true;
+Xdisplay: grid;
+
+13
+What is the purpose of the multi-column layout property?
+To assist developers in creating multi-column designs for their websites.
+To replace tables.
+None of these
+XTo display content that is contained within one block element, in a multi-column view when the page loads.
+
+14
+Which is the correct syntax to round the corners of an element?
+border-radius: 15°
+Xborder-radius: 15px;
+border: radius15°;
+border-roundness: 15px;
+
+15
+What is the correct syntax to use a non-web safe font on your site?
+All fonts used on a website must be Web Safe.
+.font {
+     font-face-src: url("Link to font");     }
+@font-style {
+     src: url("Link to font");     }
+X@font-face {
+     font-family: Font Name;
+     src: url("Link to font");      }
+
+16
+Which of the following properties can be used to change the content of a div tag, obtained earlier in the code through the use of document.getElementById()?
+.node.Value
+.content
+.HTML
+X.innerHTML
+
+17
+What is the programming term for isolating a small piece (or pieces) of data from a larger item?
+None of these
+Exclusion
+XParsing
+Elimination
+
+18
+What Javascript object is used to read touch input?
+Canvas
+ClickMap
+XTouchlist
+Screen map
+
+19
+Which of the following is the correct syntax to retrieve the physical location of the user's device?
+var longitude = navigator.geolocation.getUserLong();
+var latitude = navigator.geolocation.getUserLat();
+
+navigator.geolocation.getCurrentPosition();
+
+Xnavigator.geolocation.getCurrentPosition( printMethod, errorMethod );
+
+var location[] = navigator.geolocation.getUserLocation();
+
+20
+What does the Blob interface in the File API provide access to?
+None of these
+XRaw binary file data
+The file's metadata
+A list of all files in a given directory
+
+21
+What new feature in HTML5 allows you to manage the state of a session?
+Session Navigator
+Manage State Tool
+Session Tracker
+XHistory API
+
+22
+You want to publish an application to the Microsoft store. What should you do first?
+Write your app's description and take screenshots
+Choose and reserve your app name
+Submit your app to the Store
+XReview the app requirements and developer agreement
+
+  23
+  Which is the correct way to nest tags in HTML5?
+  X<p><b><i>Hello, World!</i></b></p>
+  <p><b><i>Hello, World!</p></i></b>
+  <p><b><i>Hello, World!</p></b></i>
+  <p><b><i>Hello, World!</b></i></p>
+
+  24
+  Which two HTML5 tags will format text to be important? (Choose two.)
+  X<strong>
+  <b>
+  X<em>
+  <i>
+  <p>
+
+25
+When should you use the new HTML5 <canvas> tag?
+To draw graphics when you don't want to use scripting
+XTo draw graphics via scripting
+To create a white background
+To paint using your mouse
+
+26
+Which three file formats are supported by the <audio> element in HTML5? (Choose three.)
+X WAV
+AVI
+AU
+X MP3
+X OGG
+AIFF
+
+27
+You want to create a CSS style that will modify the strong tag to apply blue color and add 60% transparency. Which of the following code fragments will do this?
+strong { color: rgba(0%,0%,100%,40%); }
+strong { color: rgba(0,0,255,60); }
+X strong { color: rgba(0,0,255, 0.40); }
+strong { color: #0000ff, 60%; }
+
+28
+What is jQuery?
+A language specifically writen to access databases
+Lightweight, "write less, do more" JavaScript library
+Java-based query language
+A vector-graphic language
+
+29
+On a Windows touch device, in Mouse Pointer mode, which gesture serves the same purpose as a zoom out?
+Pinch
+Tap
+Swipe
+Hold
+
+30
+Which two of the following can be read by the FileReader interface? (Choose two.)
+File Properties
+User Data
+XBlob object
+XFile object
+List of Files
+
+31
+Which three of the following are included in the HTML 5 Family? (Choose three.)
+Silverlight
+XHTML Markup
+XJavaScript
+Java
+XCSS
+SVG
+
+32
+Which two of the following is true of SVG (Scalable Vector Graphics)? (Choose two.)
+X SVG are created purely in XML, and so require very little bandwidth compared to an actual file
+X SVG images are capable of being animated
+SVG are static and cannot be animated
+SVG cannot be directly embedded on a page
+SVG are created in JavaScript, so require larger bandwidth than an actual file
+
+  33
+  Which two of the following are new organization tags in HTML5? (Choose two.)
+  <div>
+  <head>
+  <footer>
+  <section>
+  <body>
+
+34
+Which two of the following is the correct syntax to hide a button using JavaScript with jQuery? (Choose two.)
+retrieveElementBy(id);
+hideButton(name);
+getElementBy(name);
+showButton(id);
+getButton(name);
+Xdocument.getElementByID(id).hide();
+Xdocument.getElementByID(id).style.display="none";
+
+35
+Which two of the following are methods used for drawing/animation? (Choose two.)
+XmoveTo():
+XfillStyle();
+slideElement();
+tweenElement();
+motionTween();
+
+36
+Which three methods are used for localstorage and sessionstorage
+
+XgetItem();
+synch();
+retrieveItem()'
+XremoveItem();
+refresh();
+XsetItem();
+
+37
+Which three methods return a node, or nodes, based on the arguments sent? (Choose three.)
+retrieveID()
+XgetElementByTagName()
+XgetElementByID()
+XgetElementByTagNameNS()
+retrieveElementID()
+retrieveTagName()
+
+38
+Which three of the following are true of Browser Cookies? (Choose three.)
+XCookies are used to store data on the user's computer
+Cookies set by one site can be retrieved by any other website
+XCookies can be updated by the site that set them
+Cookies are considered malware and should be avoided
+XCookies can be created and stored with JavaScript
+
+39
+Which three of the following are hardware that can be accessed by an HTML5 application? (Choose three.)
+Car
+XCamera
+XGPS
+Thermometer
+Garage Door Opener
+XAccelerometer
+
+40
+Which two of the following are correct uses of the <div> tag? (Choose two.)
+XTo add a drop shadow, background color, or a border to an item
+XTo position multiple unrelated items as a group
+To change the resolution of the display
+To contain copyright information at the bottom of the page
+XTo divide an object
+
+
+1
+Which three web development "languages" are the framework of HTML5? (Choose three)
+XCascading Style Sheets
+ASP
+JavaScript
+C#
+XHypertext Markup Language
+JSP
+
+  2
+  How can HTML5 enhance the user experience on tablets and mobile devices?
+  Fully utilizes Flash to run on all mobile devices
+  Doesn't use a browser
+  It uses Microsoft Silverlight®
+  X No dependency on browser plug-ins
+
+3
+Which are the three states of an HTML5 application? (Choose three.)
+XSession
+Transport
+DataLink
+XApplication
+XPersist
+Presentation
+
+4
+Which are two ways to store data using HTML5? (Choose two.)
+XlocalStorage
+XsessionStorage
+offlineStorage
+AppCache
+driveCache
+
+  5
+  How is an HTML5 touch-enabled application tested?
+  On a PC with Firefox and Google Chrome
+  XOn as many touch-enabled hardware devices as possible
+  In a BlackBox
+  On both an Android and iPhone
+
+6
+Which three are touch events in HTML5? (Choose three.)
+XTouchmove
+Touchdrag
+Touchgo
+XTouchend
+XTouchstart
+Touchstop
+
+7
+Which is a primary goal of the application launcher icon?
+Makes the application easier to configure
+Differentiates the application as paid vs. free
+X Help users discover the application in the Android Market or the Windows Store
+Identifies the developer of the application
+
+8
+You've developed an application for mobile devices. Now you need a launcher icon. Which Microsoft application should you use to develop a launcher icon?
+
+SilverLight
+PowerPoint
+Illustrator
+X Expression Design
+
+  9
+  Which is a new HTML5 tag that applies a yellow background?
+  <background>
+  <highlight>
+  X<mark>
+  <yellow>
+
+10
+In HTML5, how should you separate the content from the design?
+CSS
+<table> tag
+JavaScript
+<div> tag
+
+11
+Which three commands are passed through the transformation layer to the output on the canvas display? (Choose three.)
+flip
+rotate
+skew
+translate
+scale
+shrink
+
+12
+You are developing graphics for a smartphone app using HTML5. The app will have real-time mathematical animations and the number of objects could be many. Which tag should you use?
+
+<translate>
+<object>
+<svg>
+X<canvas>
+
+13
+Which three are benefits of using the new HTML5 <audio> and <video> tags? (Choose three.)
+Provides live streaming
+XNo additional plug-ins are required
+XElements can be controlled with scripting and CSS
+XNot vendor-specific
+Backwards compatible with all browsers
+Supported by all codecs
+
+14
+You are using the new HTML5 <video> tag. It doesn't seem to be working correctly. What is required for the <video> tag to function?
+high-performance video card
+file must be in .mov format
+Xheight and width attribute
+control attribute
+
+15
+You are developing a new blog page and want to organize each post to stand alone. Which is an HTML5 section tag appropriate for organizing blog posts?
+<hgroup>
+<blog>
+<post>
+X<article
+
+16
+Which element used for organizing web content has been deprecated in HTML5?
+Xtable
+list
+head
+body
+
+  17
+  Which two are new HTML5 input types? (Choose two.)
+  Maxlength
+  Autofocus
+  XDate
+  XTel
+  Pattern
+
+18
+Which two are new HTML5 form fields? (Choose two.)
+Autocomplete
+Mark
+Autofocus
+XProgress
+XOutput
+
+19
+Which two statements are true about positioning floated elements? (Choose two.)
+XThe element can float right or left
+The element is positioned relative to the upper-left corner of the open window
+XThe element is positioned relative to its parent element
+The element is positioned relative to the upper-left corner of the browser
+The element can float up or down
+
+20
+Which is true about absolute positioning?
+The element is positioned relative to its parent element
+The element can float right or left
+X The element is positioned relative to the upper-left corner of the browser
+The element is positioned relative to the upper-left corner of the computer display window
+
+21
+Which box model establishes content alignment, direction and orientation?
+Fixed Box Model
+Inheritance Box Model
+XFlexible Box Model
+Parent Box Model
+
+22
+How does the new Flexible Box Model eliminate the need for using float?
+XBy providing a container positioned by properties assigned
+By positioning objects relative to a parent object
+By allowing the browser to position the objects
+By positioning all objects at the coordinates 0,
+
+23
+Which two are new CSS3 properties that allow developers to display text into columns without using tables? (Choose two.)
+List
+XMulti-column
+XRegion
+Table
+Section
+
+24
+What new CSS3 properties can help when the words are too long to fit in the content container?
+Break
+Split
+Wrap
+XHyphenation
+
+25
+Which new CSS3 feature enable the use of fonts that are not pre-loaded on a client PC?
+Font-family
+SVG
+Font-free
+XWOFF
+
+26
+If you pass a negative value to the rotate() method. What is the result?
+XIt rotates the element counter-clockwise
+It won't work
+It rotates the element clockwise
+It flips the element into the mirrored position
+
+27
+In JavaScript, what is the difference between a global versus a local variable?
+A local variable is available to any code inside the script tags
+A global variable is created inside a method or function
+XA local variable can only be used by the function that defines it
+A global variable is transported to other JavaScript programs located on other web pages
+
+28
+Which two tags help you avoid problems if a browser does not support JavaScript? (Choose two.)
+-->
+X<!--
+<comment>
+X//-->
+<--//
+
+29
+You are creating a web page and need to hide an element. Which display property will hide an element on a web page?
+display: block
+display: inline
+display: hide
+display: none
+
+30
+Which of the following is a JavaScript event capable of executing a function when the device pointer hovers over a page element?
+onmouseout
+onmousedown
+onmousein
+Xonmouseover
+
+31
+You are using JavaScript to build a web site. You need some effects to create pop-ups, tooltips and a slide show. What resource contains several JavaScript effects to create animations?
+Visual Studio
+XjQuery library
+Flash library
+Silverlight library
+
+32
+Which of the following is important to understand when creating animations using JavaScript?
+
+English
+History
+XMathematics
+Art
+
+33
+JavaScript can send a request to a web server, which then returns data to be used on the page. Which technology enables JavaScript to send and receive this data?
+Visual Basic
+.NET
+.ASP
+XAJAX
+
+34
+You are using JavaScript to access a client-side database. Which two JavaScript methods will insert data? (Choose two.)
+Xadd()
+insert()
+get()
+load()
+Xput()
+
+35
+In JavaScript, a "pinchclose" gesture has a scale of ____.
+Greater than 1.0
+Less than 0
+X Less than 1.0
+Greater than 0
+
+36
+The JavaScript rotation gesture is captured as degrees of the finger rotation. What value is returned by a counterclockwise rotation?
+Positive value
+Whole number equal to the degrees of rotation
+Value of 0
+XNegative value
+
+37
+Which three functions are included in the GeoLocation object? (Choose three.)
+findLocation
+watchLocation
+XwatchPosition
+getLocation
+XgetCurrentPosition
+XclearWatchPosition
+
+38
+What is the benefit of Web Worker?
+
+XAllows the developer to spawn background scripts that run simultaneously
+Forces scripts to execute sequentially
+Restricts scripts from running in the background
+Limits the memory used by scripts
+
+39
+Which type of hardware device is typically used with the Geolocation API?
+Camera
+Microphone
+Tablet
+X GPS
+
+40
+You are writing some code for a hiking application that measures the hiker's distance and speed. Which built-in capability allows a developer to measure the movement of a mobile hardware device?
+
+In-memory resources
+GPS
+XAccelerometer
+Webcam
+
+1
+When running an app created with HTML5 in the Windows Metro Style UI, which process hosts the application?
+X WWAHost.exe
+explorer.exe
+svchost.exe
+iexplore.exe
+
+2
+Given the following code:<br>
+&lt;form oninput=""&gt;<br>
+     &lt;input type="number" name="a" value="1"&gt;<br>
+     /&lt;input type="number" name="b" value="0"&gt;<br>
+     =&lt;output name="x" for="a b"&gt;&lt;/output&gt;<br>
+&lt;/form&gt;<br>
+<br>
+
+
+What is the correct syntax for the form oninput event?
+
+oninput="x=a/b"
+oninput="a.value/b.value"
+oninput="a/b"
+oninput="x.value=a.value/b.value"
+
+4
+What is the primary difference between <i>localStorage</i> and <i>sessionStorage</i> in HTML5?
+XlocalStorage is stored without a time limit, whereas sessionStorage is only available within the user's current session.
+localStorage applies to only one user, sessionStorage applies to all concurrent users.
+localStorage is stored on the server, sessionStorage is stored on the user's local machine as a cookie.
+localStorage applies to only one user, sessionStorage applies to all users of the application.
+
+  5
+  Which of the following is an example of a heading tag?
+
+  <title>
+  <h1>
+  <head>
+  <important>
+
+6
+Several tags have been slightly changed with the release of HTML5. These changes are largely semantic, changing the reason to use the tag, but not how it renders on the page. What is the correct usage of the <b> tag as of HTML5?
+X This tag should be used when an item needs to be bolded, but does not carry extra weight or importance. An example of this would be a small heading, or emphasizing a key word in an instruction (i.e. Click Submit when you have completed this form).
+This tag should be used when an item requires extra emphasis, or has strong importance to the sentence in question (i.e. WARNING: Please be sure to uninstall the old version of our program completely before installing the latest release).
+This tag should be used for important page headings instead of the old <h1> - <h6> tags.
+This tag has been deprecated, and should not be used.
+
+  7
+  Which one of the following tags has been deprecated in HTML5?
+  <small>
+  X<acronym>
+  All of these are correct
+  <b>
+
+8
+Which video formats are supported by the video tag?
+webm, ogg, avi
+mp4, mp3, wma
+X The supported formats are controlled by the User Agent (web browser), not controlled by the video tag specification.
+ogg, mpeg
+
+  9
+  What is the purpose of the poster attribute for a video tag?
+  The poster attribute is used to define the user who provided the video.
+  There is no poster attribute for the video tag. Poster is used to define a very large image on a webpage.
+  XThe poster attribute defines an image used in place of the video, until the video loads or the user hits play.
+  The poster attribute defines which frame (an integer value) should be used as the image in place of the video, until the video loads or the user hits play.
+
+  10
+  What is the correct syntax to make an input field required (the user must fill out the field before submitting the form)?
+  <input type="text" required="true">
+  None of these
+  X<input type="text" required>
+  <input type="text/required">
+
+11
+What is the main purpose of CSS in HTML5?
+CSS is used for scripting on an HTML web Page.
+XCSS is used to determine style, positioning, and layout of a page.
+None of these
+CSS is used to define content on a page.
+
+12
+Which of the following images most accurately represents the CSS box model?
+
+Margin -> Border -> Padding -> Content
+Whitespace -> Margin -> Padding -> Content
+Padding -> Margin ->  Content
+Whitespace -> Margin -> Content
+
+13
+What is the purpose of the "flex-flow" property?
+None of these.
+Flex-flow defines the alignment of child boxes (top, center, bottom) within the flex box.
+X Flex-flow allows the designer to set both the flex-direction and flex-wrap properties with a single line of code.
+Flex-flow ONLY determines whether or not the child boxes will wrap to a new line upon running out of space.
+
+14
+What is the purpose of CSS Regions?
+To group related sections of code together for easy readability.
+X To allow content to flow from one predefined box to another.
+To define a content area on that site that is style-able as a whole.
+To define an area of an image that is clickable, like a link.
+
+15
+What is the purpose of a CSS Exclusion?
+X To create an area on the page where the text will automatically wrap and format around.
+To exclude old code from the CSS file, without deleting it.
+To exclude chunks of old content from a document using a strikeout.
+To exclude specified colors from appearing on the site, allowing for a fixed color scheme.
+
+16
+
+If a developer needs to hold a piece of data in Javascript for use later in a function, what would they use?
+Copy
+X Variable
+Function
+Container
+
+17
+Which of the following is the correct syntax to create a canvas object?
+.instantiate();
+.create();
+.draw();
+X .getContext();
+
+18
+Which of the following functions is used to control timing in JavaScript Animations?
+None of these
+keyframes()
+X setTimeout()
+timer()
+
+19
+What is the purpose of the JSON API?
+X Sending and receiving information from a web server through JavaScript.
+Graphical processing inside of the web browser.
+Mathematical calculations in JavaScript.
+Server-side graphical processing.
+
+20
+What does the targetTouches touchlist represent?
+A list of touch points that caused the current event to be fired.
+A list of 'hot' areas on the screen which are touchable items, defined by a set of x and y coordinates.
+XAll touch points currently in contact with the screen, whose touchstart event occurred within the same node as the current target element.
+None of these.
+
+21
+What is the purpose of a Web Worker?
+None of these.
+X To allow code to run in multiple threads, while the website still responds to user input.
+To handle complex calculations client-side.
+To give the developer automatic code completion when coding in Javascript.
+
+22
+Which of the following methods can be used to set data into localStorage
+localStorage.insert(key, value);
+localStorage.addItem(key value);
+localStorage.append(key, value);
+localStorage.setItem(key, value);
+
+23
+HTML5 includes which two history object methods to persist state information ? (Choose two.)
+XreplaceState
+XpushState
+pageState
+pageHistory
+persist
+
+24
+Which three of the following are gestures defined by Microsoft? (Choose three.)
+Twirl
+Slip
+XDrag
+XFlick
+Click
+XDouble Tap
+
+25
+What is a "launcher icon"?
+XA graphic that represents an application on the device’s Home screen
+A graphic of a rocket
+A graphic that takes the user to the developer's website
+A link that launches to a graphic
+
+  26
+  Which three of the following describe the <aside> tag? (Choose three.)
+  This tag is used to delete content from a document
+  This tag is used to postpone an action
+  XThis tag is used to define content that is tangentially related to the main content of the document (i.e. a sidebar in a book)
+  XThis tag is used to define footnotes or annotations for a document
+  This tag is used to define parenthetical statements
+  XThis tag is not used to define parenthetical statements
+
+  27
+  Which two tags will repeat an audio file after it finishes playing? (Choose two.)
+  X<audio src="file.wav" loop="loop">
+  X<audio src="file.wav" loop>
+  <audio src="file.wav" repeat>
+  <audio src="file.wav" endless>
+
+  28
+  Which code fragment will display an image file while the video is downloading?
+  <video width="740" height="416" preload="horserace.jpg">
+  <video width="740" height="416" autoplay="horserace.jpg">
+  <video width="740" height="416" src="horserace.jpg">
+  X<video width="740" height="416" poster="horserace.jpg">
+
+29
+Which three of the following are table attributes that have been deprecated in HTML5? (Choose three.)
+Shape
+Fill
+XCell Padding
+Circle
+XAlign
+XWidth
+
+  30
+  Which two of the following are semantic tags that are used to define layout in a HTML5 document? (Choose two.)
+  nav
+  Xfooter
+  Xsection
+  mark
+  time
+
+  31
+  Which two of the following are validation values for the Type attribute of the text Input tag? (Choose two.)
+  block
+  Xemail
+  Xurl
+  phone
+  location
+
+32
+Which CSS style positions an element relative to the browser window?
+position: absolute;
+position: static;
+position: relative;
+Xposition: fixed;
+
+33
+Which three of the following are CSS gradient properties? (Choose three.)
+XRepeating-radial-gradient
+XRadial-gradient
+XOptical-gradient
+Transparent-gradient
+Linear-gradient
+Opaque-gradient
+
+34
+Which three of the following are Javascript events? (Choose three.)
+XonClick()
+XondblClick()
+XonBlur()
+alert()
+onMousePoint()
+onModify()
+
+35
+JavaScript is used to perform which three of the following tasks? (Choose three.)
+Add styling to a webpage
+Define content semantically on a page
+XHandle client-side calculations
+Replace all the features of Java
+XAdd dynamic functionality to a webpage
+XAdd interactive capabilities to a webpage
+
+36
+Which two of the following are JavaScript Touch Event Types? (Choose two.)
+touchZoom
+XtouchStart
+touchPan
+XtouchEnd
+
+37
+Which two of the following are numeric values required for a touch event? (Choose two.)
+pressure
+Xscale
+location
+Xrotation
+linear
+
+38
+What gesture is used to increase the size of the screen display?
+flick
+hold
+Xpinch
+slide
+
+39
+Which of the following is a method to the Geolocation object?
+getMyLocation()
+XgetCurrentPosition()
+gpsLocation()
+gpsPosition()
+
+40
+Which two of the following are in-memory resources that can be accessed by JavaScript? (Choose two.)
+GPS
+contact lists
+camera
+calendar
+accelerometer
