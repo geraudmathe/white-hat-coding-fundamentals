@@ -73,51 +73,47 @@ The App Package is the entire app packaged into a single file. This process is s
   Button
   All of these are valid
 
-10
-What is the correct syntax for a CSS comment?
-<!--- Comment Goes Here -->
-XX/* Comment Goes Here */
-// Comment Goes Here
-# Comment Goes Here #
+  10
+  What is the correct syntax for a CSS comment?
+  <!--- Comment Goes Here -->
+  XX/* Comment Goes Here */
+  // Comment Goes Here
+  # Comment Goes Here #
 
-11
-What is the purpose of the flexbox properties in CSS?
-XTo display an element as a flexbox, allowing its size, and position adjust with the size of the viewport.
-To display an element as a flexbox, allowing the user to drag the edges of the box in and out to change its size.
-To display an element as a flexbox, allow it to be moved dynamically to any position on the page with very little additional code.
-To display an element as a flexbox, allowing the content of a paragraph element to wrap around adjacent images.
+  11
+  What is the purpose of the flexbox properties in CSS?
+  XTo display an element as a flexbox, allowing its size, and position adjust with the size of the viewport.
+  To display an element as a flexbox, allowing the user to drag the edges of the box in and out to change its size.
+  To display an element as a flexbox, allow it to be moved dynamically to any position on the page with very little additional code.
+  To display an element as a flexbox, allowing the content of a paragraph element to wrap around adjacent images.
 
-12
-Which is the correct method to define a block element as a grid?
-None of these
-show: grid;
-grid: true;
-Xdisplay: grid;
+  12
+  Which is the correct method to define a block element as a grid?
+  None of these
+  show: grid;
+  grid: true;
+  Xdisplay: grid;
 
-13
-What is the purpose of the multi-column layout property?
-To assist developers in creating multi-column designs for their websites.
-To replace tables.
-None of these
-XTo display content that is contained within one block element, in a multi-column view when the page loads.
+  13
+  What is the purpose of the multi-column layout property?
+  To assist developers in creating multi-column designs for their websites.
+  To replace tables.
+  None of these
+  XTo display content that is contained within one block element, in a multi-column view when the page loads.
 
-14
-Which is the correct syntax to round the corners of an element?
-border-radius: 15°
-Xborder-radius: 15px;
-border: radius15°;
-border-roundness: 15px;
+  14
+  Which is the correct syntax to round the corners of an element?
+  border-radius: 15°
+  Xborder-radius: 15px;
+  border: radius15°;
+  border-roundness: 15px;
 
-15
-What is the correct syntax to use a non-web safe font on your site?
-All fonts used on a website must be Web Safe.
-.font {
-     font-face-src: url("Link to font");     }
-@font-style {
-     src: url("Link to font");     }
-X@font-face {
-     font-family: Font Name;
-     src: url("Link to font");      }
+  15
+  What is the correct syntax to use a non-web safe font on your site?
+  All fonts used on a website must be Web Safe.
+  .font { font-face-src: url("Link to font");     }
+  @font-style { src: url("Link to font");     }
+  @font-face { font-family: Font Name; src: url("Link to font");      }
 
 16
 Which of the following properties can be used to change the content of a div tag, obtained earlier in the code through the use of document.getElementById()?
@@ -311,23 +307,23 @@ Thermometer
 Garage Door Opener
 XAccelerometer
 
-40
-Which two of the following are correct uses of the <div> tag? (Choose two.)
-XTo add a drop shadow, background color, or a border to an item
-XTo position multiple unrelated items as a group
-To change the resolution of the display
-To contain copyright information at the bottom of the page
-XTo divide an object
+  40
+  Which two of the following are correct uses of the <div> tag? (Choose two.)
+  XTo add a drop shadow, background color, or a border to an item
+  XTo position multiple unrelated items as a group
+  To change the resolution of the display
+  To contain copyright information at the bottom of the page
+  XTo divide an object
 
 
-1
-Which three web development "languages" are the framework of HTML5? (Choose three)
-XCascading Style Sheets
-ASP
-JavaScript
-C#
-XHypertext Markup Language
-JSP
+  1
+  Which three web development "languages" are the framework of HTML5? (Choose three)
+  XCascading Style Sheets
+  ASP
+  JavaScript
+  C#
+  XHypertext Markup Language
+  JSP
 
   2
   How can HTML5 enhance the user experience on tablets and mobile devices?
@@ -391,12 +387,12 @@ X Expression Design
   X<mark>
   <yellow>
 
-10
-In HTML5, how should you separate the content from the design?
-CSS
-<table> tag
-JavaScript
-<div> tag
+  10
+  In HTML5, how should you separate the content from the design?
+  CSS
+  <table> tag
+  JavaScript
+  <div> tag
 
 11
 Which three commands are passed through the transformation layer to the output on the canvas display? (Choose three.)
@@ -407,13 +403,13 @@ translate
 scale
 shrink
 
-12
-You are developing graphics for a smartphone app using HTML5. The app will have real-time mathematical animations and the number of objects could be many. Which tag should you use?
+  12
+  You are developing graphics for a smartphone app using HTML5. The app will have real-time mathematical animations and the number of objects could be many. Which tag should you use?
 
-<translate>
-<object>
-<svg>
-X<canvas>
+  <translate>
+  <object>
+  <svg>
+  X<canvas>
 
 13
 Which three are benefits of using the new HTML5 <audio> and <video> tags? (Choose three.)
@@ -431,19 +427,19 @@ file must be in .mov format
 Xheight and width attribute
 control attribute
 
-15
-You are developing a new blog page and want to organize each post to stand alone. Which is an HTML5 section tag appropriate for organizing blog posts?
-<hgroup>
-<blog>
-<post>
-X<article
+  15
+  You are developing a new blog page and want to organize each post to stand alone. Which is an HTML5 section tag appropriate for organizing blog posts?
+  <hgroup>
+  <blog>
+  <post>
+  X<article
 
-16
-Which element used for organizing web content has been deprecated in HTML5?
-Xtable
-list
-head
-body
+  16
+  Which element used for organizing web content has been deprecated in HTML5?
+  Xtable
+  list
+  head
+  body
 
   17
   Which two are new HTML5 input types? (Choose two.)
@@ -461,20 +457,20 @@ Autofocus
 XProgress
 XOutput
 
-19
-Which two statements are true about positioning floated elements? (Choose two.)
-XThe element can float right or left
-The element is positioned relative to the upper-left corner of the open window
-XThe element is positioned relative to its parent element
-The element is positioned relative to the upper-left corner of the browser
-The element can float up or down
+  19
+  Which two statements are true about positioning floated elements? (Choose two.)
+  XThe element can float right or left
+  The element is positioned relative to the upper-left corner of the open window
+  XThe element is positioned relative to its parent element
+  The element is positioned relative to the upper-left corner of the browser
+  The element can float up or down
 
-20
-Which is true about absolute positioning?
-The element is positioned relative to its parent element
-The element can float right or left
-X The element is positioned relative to the upper-left corner of the browser
-The element is positioned relative to the upper-left corner of the computer display window
+  20
+  Which is true about absolute positioning?
+  The element is positioned relative to its parent element
+  The element can float right or left
+  X The element is positioned relative to the upper-left corner of the browser
+  The element is positioned relative to the upper-left corner of the computer display window
 
 21
 Which box model establishes content alignment, direction and orientation?
@@ -490,34 +486,34 @@ By positioning objects relative to a parent object
 By allowing the browser to position the objects
 By positioning all objects at the coordinates 0,
 
-23
-Which two are new CSS3 properties that allow developers to display text into columns without using tables? (Choose two.)
-List
-XMulti-column
-XRegion
-Table
-Section
+  23
+  Which two are new CSS3 properties that allow developers to display text into columns without using tables? (Choose two.)
+  List
+  XMulti-column
+  XRegion
+  Table
+  Section
 
-24
-What new CSS3 properties can help when the words are too long to fit in the content container?
-Break
-Split
-Wrap
-XHyphenation
+  24
+  What new CSS3 properties can help when the words are too long to fit in the content container?
+  Break
+  Split
+  Wrap
+  XHyphenation
 
-25
-Which new CSS3 feature enable the use of fonts that are not pre-loaded on a client PC?
-Font-family
-SVG
-Font-free
-XWOFF
+  25
+  Which new CSS3 feature enable the use of fonts that are not pre-loaded on a client PC?
+  Font-family
+  SVG
+  Font-free
+  XWOFF
 
-26
-If you pass a negative value to the rotate() method. What is the result?
-XIt rotates the element counter-clockwise
-It won't work
-It rotates the element clockwise
-It flips the element into the mirrored position
+  26
+  If you pass a negative value to the rotate() method. What is the result?
+  XIt rotates the element counter-clockwise
+  It won't work
+  It rotates the element clockwise
+  It flips the element into the mirrored position
 
 27
 In JavaScript, what is the difference between a global versus a local variable?
@@ -534,12 +530,12 @@ X<!--
 X//-->
 <--//
 
-29
-You are creating a web page and need to hide an element. Which display property will hide an element on a web page?
-display: block
-display: inline
-display: hide
-display: none
+  29
+  You are creating a web page and need to hide an element. Which display property will hide an element on a web page?
+  display: block
+  display: inline
+  display: hide
+  display: none
 
 30
 Which of the following is a JavaScript event capable of executing a function when the device pointer hovers over a page element?
@@ -705,13 +701,13 @@ XCSS is used to determine style, positioning, and layout of a page.
 None of these
 CSS is used to define content on a page.
 
-12
-Which of the following images most accurately represents the CSS box model?
+  12
+  Which of the following images most accurately represents the CSS box model?
 
-Margin -> Border -> Padding -> Content
-Whitespace -> Margin -> Padding -> Content
-Padding -> Margin ->  Content
-Whitespace -> Margin -> Content
+  Margin -> Border -> Padding -> Content
+  Whitespace -> Margin -> Padding -> Content
+  Padding -> Margin ->  Content
+  Whitespace -> Margin -> Content
 
 13
 What is the purpose of the "flex-flow" property?
@@ -720,19 +716,19 @@ Flex-flow defines the alignment of child boxes (top, center, bottom) within the 
 X Flex-flow allows the designer to set both the flex-direction and flex-wrap properties with a single line of code.
 Flex-flow ONLY determines whether or not the child boxes will wrap to a new line upon running out of space.
 
-14
-What is the purpose of CSS Regions?
-To group related sections of code together for easy readability.
-X To allow content to flow from one predefined box to another.
-To define a content area on that site that is style-able as a whole.
-To define an area of an image that is clickable, like a link.
+  14
+  What is the purpose of CSS Regions?
+  To group related sections of code together for easy readability.
+  X To allow content to flow from one predefined box to another.
+  To define a content area on that site that is style-able as a whole.
+  To define an area of an image that is clickable, like a link.
 
-15
-What is the purpose of a CSS Exclusion?
-X To create an area on the page where the text will automatically wrap and format around.
-To exclude old code from the CSS file, without deleting it.
-To exclude chunks of old content from a document using a strikeout.
-To exclude specified colors from appearing on the site, allowing for a fixed color scheme.
+  15
+  What is the purpose of a CSS Exclusion?
+  X To create an area on the page where the text will automatically wrap and format around.
+  To exclude old code from the CSS file, without deleting it.
+  To exclude chunks of old content from a document using a strikeout.
+  To exclude specified colors from appearing on the site, allowing for a fixed color scheme.
 
 16
 
@@ -856,12 +852,12 @@ XWidth
   phone
   location
 
-32
-Which CSS style positions an element relative to the browser window?
-position: absolute;
-position: static;
-position: relative;
-Xposition: fixed;
+  32
+  Which CSS style positions an element relative to the browser window?
+  position: absolute;
+  position: static;
+  position: relative;
+  Xposition: fixed;
 
 33
 Which three of the following are CSS gradient properties? (Choose three.)
